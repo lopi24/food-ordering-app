@@ -1,0 +1,72 @@
+.button {
+  width: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+
+  background-color: #fc5f00;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); */
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+.button:hover {
+  border-color: #fff;
+  color: #000;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button .icon svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  /* margin-right: 0.5rem; */
+  color: #000;
+}
+
+.badge {
+  background-color: #4c3d3d;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  /* margin-left: 1rem; */
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #92320c;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Ysabeau:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("../../../assets/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.hero-content-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-inner h1 {
+  font-family: "Darumadrop One", cursive;
+  font-size: 10vh;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero-content-inner h6 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Ysabeau", sans-serif;
+}
+
+.hero-content-inner p {
+  font-family: "Sen", sans-serif;
+  width: 80%;
+  /* margin: 0 auto; */
+  font-size: 3vh;
+  font-weight: normal;
+  color: #fff;
+  line-height: 22px;
+  text-align: center;
+}
+
+.hero-content-inner .button {
+  width: 170px;
+  height: 50px;
+  margin-top: 40px;
+  border-radius: 0px;
+  outline: none;
+  font-size: 15px;
+  text-transform: capitalize;
+  background-color: #fc5f00;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.hero-content-inner .button:hover {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+
+@media (max-width: 769px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content-inner h1 {
+    font-size: 30px;
+  }
+  .hero-content-inner h6 {
+    font-size: 20px;
+  }
+  .hero-content-inner p {
+    width: 100%;
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

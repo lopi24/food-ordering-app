@@ -1,0 +1,107 @@
+.restaurant-section {
+  margin-top: 2rem;
+  padding: 2.5vh 0 5vh 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.compiled-images {
+  width: 98%;
+}
+.set {
+  display: flex;
+  height: 70vh;
+  padding: 0.5rem 0;
+}
+.set .box {
+  width: 100%;
+  margin: 0 0.5rem;
+}
+.set .box:nth-child(1) {
+  margin-left: 0;
+}
+.set .box:nth-child(2) {
+  margin-right: 0;
+}
+
+.box img {
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant-description {
+  width: 100%;
+  padding: 0 6vw;
+}
+
+.restaurant-description > * {
+  padding: 1.5rem;
+}
+
+.restaurant-description p {
+  overflow: hidden;
+  font-size: 1.1rem;
+  line-height: 4vh;
+  white-space: normal;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media only screen and (max-width: 769px) {
+  .restaurant-section {
+    flex-direction: column-reverse;
+    margin: 2rem auto;
+    margin-bottom: 0;
+    width: 80%;
+  }
+  .set {
+    height: 50vh;
+  }
+  .set .box:nth-child(1) img {
+    object-position: bottom center;
+  }
+
+  .restaurant-description {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    padding: 0 1%;
+  }
+
+  .restaurant-description > * {
+    padding: 0.5rem;
+  }
+
+  .restaurant-description p {
+    font-size: 1rem;
+    line-height: 4vh;
+    white-space: normal;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .restaurant-description h2 {
+    font-size: 1.2rem;
+  }
+  .restaurant-description p {
+    font-size: 0.9rem;
+    line-height: 4vh;
+  }
+
+  .restaurant-description {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .restaurant-section {
+    margin: 1rem auto;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    width: 90%;
+  }
+}
